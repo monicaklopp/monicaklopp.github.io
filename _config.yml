@@ -14,7 +14,7 @@ author: Matthew N. George, Ph.D.
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  CV: "/docs/Matthew%20N%20George%20-%20CV%20(2020).pdf"
+  CV: "blob/master/docs/Matthew%20N%20George%20-%20CV%20(2020).pdf"
   About: "aboutme"
   Lab Notebook: "labnotebook"
   Publications: "publications"
