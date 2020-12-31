@@ -5,7 +5,7 @@ subtitle: Postdoctoral Researcher, University of Washington
 ---
 
 ### Profiles
-- [CV](https://github.com/mattgeorgephd/mattgeorgephd.github.io/blob/master/docs/Matthew%20N%20George%20-%20CV%20(2020).pdf)
+- [CV](/docs/Matthew N George - CV (2020).pdf)
 - [ORCID](https://orcid.org/0000-0003-1264-8667)
 - [LinkedIn](https://www.linkedin.com/in/matt-george-65a4b94b/)
 
