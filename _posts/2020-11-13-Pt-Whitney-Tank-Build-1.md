@@ -24,6 +24,6 @@ The goal of the experiment is to identify which biological pathways in triploid 
 
 ## Current Progress
 
-Pt. Whitney has the space and resources for 4 large seawater tanks. [https://genefish.slack.com/files/U01D50SDEBT/F01DR9YGPMH/tank_design_3_in_diameter_silo.png](https://genefish.slack.com/files/U01D50SDEBT/F01DR9YGPMH/tank_design_3_in_diameter_silo.png)
+Pt. Whitney has the space and resources for 4 large [seawater tanks](/post_images/111320/tank.png)
 
 To date, I have designed the 
