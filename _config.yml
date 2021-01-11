@@ -29,9 +29,9 @@ avatar: "/assets/img/Headshot_MNG_square.jpg"
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
 
-# If you want to have an image logo in the top-left corner instead of having the title of the website,
+# If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-#title-img: /path/to/image
+title-img: "/assets/img/Headshot_MNG_square.jpg"
 
 
 # --- Footer social media links --- #
@@ -42,9 +42,10 @@ social-network-links:
   email: "mngeorge@uw.edu"
   ORCID: 0000-0003-1264-8667
   github: mattgeorgephd
+  linkedin: matt-george-65a4b94b
   
 #  reddit: yourname
-#  linkedin: daattali
+#  linkedin: matt-george-65a4b94b
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -72,6 +73,7 @@ share-links-active:
   facebook: false
   linkedin: false
   vk: false
+  github: true
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
@@ -184,11 +186,12 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "America/Vancouver"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: /:title/
 paginate: 5
+paginate_path: "/notebook/page:num/"
 
 kramdown:
   input: GFM
@@ -219,6 +222,59 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
+
+# prose.io config
+prose:
+  rooturl: '_posts'
+  media: 'img'
+  ignore:
+    - 404.html
+    - LICENSE
+    - feed.xml
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - /css
+    - /img
+    - /js
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Post title"
+          placeholder: "Title"
+          alterable: true
+      - name: "subtitle"
+        field:
+          element: "textarea"
+          label: "Subtitle"
+          placeholder: "A description of your post."
+          alterable: true
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          help: "Enter date of post."
+          placeholder: "yyyy-mm-dd"
+          alterable: true
+      - name: "image"
+        field:
+          element: "text"
+          label: "Image"
+          help: "Add a thumbnail image to your post."
+          placeholder: "Thumbnail"
+          alterable: true
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Publish"
+          help: "Check to publish post, uncheck to hide."
+
 
 plugins:
   - jekyll-paginate
