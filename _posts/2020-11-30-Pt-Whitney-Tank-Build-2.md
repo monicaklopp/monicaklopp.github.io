@@ -1,17 +1,22 @@
 ---
 layout: post
 title: Mon. Nov. 30, 2020
-subtitle: [NOPP-GIGAS-TEMP-3N] Pt. Whitney Tank Build - update 2
+subtitle: Pt. Whitney Tank Build - update 2
 gh-badge: [star, fork, follow]
 tags: oyster temperature triploid diploid
 comments: true
 ---
 
+Project name: NOPP-GIGAS-TEMP-3N
+Funding source:[National Oceanographic Partnership Program](https://www.nopp.org/)
+Species: *Crassostrea gigas*
+variable: High temperature stress
+
 ## Tank build progress
 
 After dealing with some covid-19 imposed supply chain issues, the first tank prototype with 35 silos has been completed. 
 
-![](/post_images/113020/tank_full.png).
+![](/post_images/113020/tank_full.png)
 
 Table 1: Supplies List (silos and manifold)
 
@@ -31,16 +36,16 @@ Table 1: Supplies List (silos and manifold)
 
 A view of the silos and tank inside:
 
-![](/post_images/113020/tank_inside.png).
+![](/post_images/113020/tank_inside.png)
 
 The tank prototype installed at point whitney:
 
-![](/post_images/113020/tank_installed.png).
+![](/post_images/113020/tank_installed.png)
 
-Side view of the manifold with push-to-connect:
+Side view of the manifold with push-to-connect fittings installed:
 
-![](/post_images/113020/manifold.png).
+![](/post_images/113020/manifold.png)
 
 Manifold flow test:
 
-![](/post_images/113020/manifold_test.mp4).
+![](https://youtu.be/Gr6GFsH8zXg).

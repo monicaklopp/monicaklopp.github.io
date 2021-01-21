@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mon. Nov. 13, 2020
-subtitle: [NOPP-GIGAS-TEMP-3N] Pt. Whitney Tank Build - update 1
+subtitle: Pt. Whitney Tank Build - update 1
 gh-badge: [star, fork, follow]
 tags: oyster temperature triploid diploid
 comments: true
@@ -9,7 +9,7 @@ comments: true
 
 ## Background
 
-Project name: [NOPP-GIGAS-TEMP-3N]
+Project name: NOPP-GIGAS-TEMP-3N
 Funding source:[National Oceanographic Partnership Program](https://www.nopp.org/)
 Species: *Crassostrea gigas*
 variable: High temperature stress
