@@ -2,6 +2,7 @@
 layout: post
 title: Mon. Nov. 13, 2020
 subtitle: Pt. Whitney Tank Build - update 1
+gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
 tags: oyster temperature triploid diploid
 comments: true
@@ -10,8 +11,11 @@ comments: true
 ## Background
 
 Project name: NOPP-GIGAS-TEMP-3N
+
 Funding source:[National Oceanographic Partnership Program](https://www.nopp.org/)
+
 Species: *Crassostrea gigas*
+
 variable: High temperature stress
 
 We are planning on conducting a mesocosm experiment at the [Jamestown Pt. Whitney Shellfish Hatchery and Research Laboratory](https://goo.gl/maps/27SMdcsPRsNcg6Le9) that compares the genomic response of diploid and triploid pacific oysters to high temperature stress. 

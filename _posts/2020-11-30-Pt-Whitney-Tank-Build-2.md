@@ -2,14 +2,18 @@
 layout: post
 title: Mon. Nov. 30, 2020
 subtitle: Pt. Whitney Tank Build - update 2
+gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
 tags: oyster temperature triploid diploid
 comments: true
 ---
 
 Project name: NOPP-GIGAS-TEMP-3N
+
 Funding source:[National Oceanographic Partnership Program](https://www.nopp.org/)
+
 Species: *Crassostrea gigas*
+
 variable: High temperature stress
 
 ## Tank build progress
@@ -48,4 +52,4 @@ Side view of the manifold with push-to-connect fittings installed:
 
 Manifold flow test:
 
-![](https://youtu.be/Gr6GFsH8zXg).
+[![video](/post_images/113020/manifold.png)](https://youtu.be/Gr6GFsH8zXg)

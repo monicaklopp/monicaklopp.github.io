@@ -1,11 +1,20 @@
 ---
 layout: post
 title: Thu. Dec. 10, 2020
-subtitle: [NOPP-GIGAS-TEMP-3N] Pt. Whitney Tank Build - update 3
+subtitle: Pt. Whitney Tank Build - update 3
+gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
 tags: oyster temperature triploid diploid
 comments: true
 ---
+
+(1) Project name: NOPP-GIGAS-TEMP-3N
+
+(2) Funding source:[National Oceanographic Partnership Program](https://www.nopp.org/)
+
+(3) Species: *Crassostrea gigas*
+
+(4) variable: High temperature stress
 
 ## Heating calculations
 
@@ -61,7 +70,7 @@ Here is a picture of the heated header tank upstairs (without its lid):
 
 A picture of the tanks downstairs:
 
-![](/post_images/121020/tall_tanks_covered.png)
+![](/post_images/121020/all_tanks_covered.png)
 
 Side view of the manifold:
 
