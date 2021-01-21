@@ -49,10 +49,6 @@ Side view of the manifold with push-to-connect fittings installed:
 
 Manifold flow test:
 
-![](https://youtu.be/Gr6GFsH8zXg)
-
-HTML flow test:
-
-<video width="320" height="240" controls>
+<video width="700" height="525" controls>
   <source src="/post_images/113020/manifold_test.mp4" type="video/mp4">
 </video>
