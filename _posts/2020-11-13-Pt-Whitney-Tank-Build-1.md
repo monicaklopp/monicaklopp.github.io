@@ -8,15 +8,12 @@ tags: oyster temperature triploid diploid
 comments: true
 ---
 
+1. Project name: NOPP-GIGAS-TEMP-3N
+2. Funding source:[National Oceanographic Partnership Program](https://www.nopp.org/)
+3. Species: *Crassostrea gigas*
+4. variable: High temperature stress
+
 ## Background
-
-Project name: NOPP-GIGAS-TEMP-3N
-
-Funding source:[National Oceanographic Partnership Program](https://www.nopp.org/)
-
-Species: *Crassostrea gigas*
-
-variable: High temperature stress
 
 We are planning on conducting a mesocosm experiment at the [Jamestown Pt. Whitney Shellfish Hatchery and Research Laboratory](https://goo.gl/maps/27SMdcsPRsNcg6Le9) that compares the genomic response of diploid and triploid pacific oysters to high temperature stress. 
 

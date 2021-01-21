@@ -8,13 +8,10 @@ tags: oyster temperature triploid diploid
 comments: true
 ---
 
-Project name: NOPP-GIGAS-TEMP-3N
-
-Funding source:[National Oceanographic Partnership Program](https://www.nopp.org/)
-
-Species: *Crassostrea gigas*
-
-variable: High temperature stress
+1. Project name: NOPP-GIGAS-TEMP-3N
+2. Funding source:[National Oceanographic Partnership Program](https://www.nopp.org/)
+3. Species: *Crassostrea gigas*
+4. variable: High temperature stress
 
 ## Tank build progress
 
@@ -52,4 +49,10 @@ Side view of the manifold with push-to-connect fittings installed:
 
 Manifold flow test:
 
-[![video](/post_images/113020/manifold.png)](https://youtu.be/Gr6GFsH8zXg)
+![](https://youtu.be/Gr6GFsH8zXg)
+
+HTML flow test:
+
+<video width="320" height="240" controls>
+  <source src="/post_images/113020/manifold_test.mp4" type="video/mp4">
+</video>

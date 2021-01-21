@@ -8,13 +8,10 @@ tags: oyster temperature triploid diploid
 comments: true
 ---
 
-(1) Project name: NOPP-GIGAS-TEMP-3N
-
-(2) Funding source:[National Oceanographic Partnership Program](https://www.nopp.org/)
-
-(3) Species: *Crassostrea gigas*
-
-(4) variable: High temperature stress
+1. Project name: NOPP-GIGAS-TEMP-3N
+2. Funding source:[National Oceanographic Partnership Program](https://www.nopp.org/)
+3. Species: *Crassostrea gigas*
+4. variable: High temperature stress
 
 ## Heating calculations
 
