@@ -8,10 +8,10 @@ tags: oyster temperature triploid diploid bismark mox bowtie2
 comments: true
 ---
 
-1. Project name: RONIT-GIGAS-DESICCATION-3N
-2. Funding source:[unknown](https://www.nopp.org/)
-3. Species: *Crassostrea gigas*
-4. variable: High temperature stress
+Project name: RONIT-GIGAS-DESICCATION-3N <br />
+Funding source: [unknown]() <br />
+Species: *Crassostrea gigas* <br />
+variable: ploidy, desiccation, high temperature <br />
 
 ## Background:
 We have bisulfide sequencing data from Ronit's desiccation exposure
@@ -23,8 +23,8 @@ List of the progress so far:
 3. [Sam ran FastQC](https://robertslab.github.io/sams-notebook/2020/11/10/FastQC-MultiQC-C.gigas-Ploidy-WGBS-Raw-Sequence-Data-from-Ronits-Project-on-Mox.html). Here is the [multiQC report](https://gannet.fish.washington.edu/Atumefaciens/20201110_cgig_fastqc_ronit-ploidy-wgbs/multiqc_report.html)
 
 Here is a list of samples
-| SeqID	| Library_Name | 	Tissue | 	Ploidy | 	Desiccation	| Heat_Stress |
-| --- | ---| ---| ---| ---| ---|
+| SeqID	    | Library_Name | 	Tissue | 	Ploidy | 	Desiccation	| Heat_Stress |
+| --------- | :--------:   | :------:| :------:| :--------:| :---:|
 | zr3534_1 | 	D11-C	| ctenidia	| diploid	| yes| 	no|
 | zr3534_2 | 	D12-C	| ctenidia	| diploid	| yes	| no|
 | zr3534_3 | 	D13-C	| ctenidia	| diploid	| yes	| no|
@@ -47,43 +47,118 @@ The steps I will be following during this analysis are:
 1. logging into mox server
 2. Generating slurm script (.sh)
 
+## Step 1: Logging into mox
 
-## step 1: Logging into mox
+  ssh mngeorge@mox.hyak.uw.edu
 
-  $ ssh mngeorge@mox.hyak.uw.edu
-  Password:
-  Enter passcode or select one of the following options:
+![](/post_images/031621/login_successful.png)
 
-   1. Duo Push to Android (XXX-XXX-5141)
-   2. Phone call to Android (XXX-XXX-5141)
+## Step 2: slurm script and job scheduler
 
-  Duo passcode or option [1-2]: 1
-           __  __  _____  __  _  ___   ___   _  __
-          |  \/  |/ _ \ \/ / | || \ \ / /_\ | |/ /
-          | |\/| | (_) >  <  | __ |\ V / _ \| ' <
-          |_|  |_|\___/_/\_\ |_||_| |_/_/ \_\_|\_\
+Slurm is an open source, fault-tolerant, and highly scalable cluster management and job scheduling system for large and small Linux clusters. Useful information can be found in the [wiki](https://github.com/RobertsLab/hyak_mox/wiki/Running-a-Job) and this [example](https://genefish.wordpress.com/2021/03/05/job-nameron-rosm) that Steven provided.
 
-      This login node is meant for interacting with the job scheduler and
-      transferring data to and from Hyak. Please work by requesting an
-      interactive session on (or submitting batch jobs to) compute nodes.
+To configure the job, I first had to develop my file structure:
 
-      Visit the Hyak user wiki for more details:
-      http://wiki.hyak.uw.edu/Hyak+mox+Overview
+  mkdir -p mneorge/{analyses,blastdb,data,jobs,programs,sbatch_scripts}
 
-      Questions? E-mail help@uw.edu with "hyak" in the subject.
+parent folder: /gscratch/srlab/mngeorge
+contents: analyses  blastdb  data  jobs  programs  sbatch_scripts
 
-      Run "scontrol show res" to see any reservations in place that will
-      prevent your jobs from running with a "(ReqNodeNotAvail,*" error.
+After completed, I copied ronit's data to my data folder:
 
-## step 2: slurm script and job scheduler
+  cp -avr /gscratch/srlab/sr320/data/cg /gscratch/srlab/mngeorge/data/cgigas_ronit
 
-Slurm is an open source, fault-tolerant, and highly scalable cluster management and job scheduling system for large and small Linux clusters. Useful information can be found in the [wiki](https://github.com/RobertsLab/hyak_mox/wiki/Running-a-Job) and in this [example](https://genefish.wordpress.com/2021/03/05/job-nameron-rosm/) that steven provided.
+I then recreated a sbatch file within the sbatch_scripts (20210316_cgig_ploidy_stress_bismark.sh) subfolder to run bismark on the data.
 
-  
+Here is the code:
+```
+  GNU nano 2.3.1                          File: 20210316_cgig_ploidy_stress_bismark.sh
+
+  #!/bin/bash
+  ## Job Name
+  #SBATCH --job-name=ronit-bismark
+  ## Allocation Definition
+  #SBATCH --account=coenv
+  #SBATCH --partition=coenv
+  ## Nodes
+  #SBATCH --nodes=1
+  ## Walltime (days-hours:minutes:seconds format)
+  #SBATCH --time=15-00:00:00
+  ## Memory per node
+  #SBATCH --mem=100G
+  #SBATCH --mail-type=ALL
+  #SBATCH --mail-user=mngeorge@uw.edu
+  ## Specify the working directory for this job
+  #SBATCH --chdir=/gscratch/srlab/mngeorge/20210316-cgigas-ploidy-stress-bismark/
+
+  # Directories and programs
+  bismark_dir="/gscratch/srlab/programs/Bismark-0.21.0"
+  bowtie2_dir="/gscratch/srlab/programs/bowtie2-2.3.4.1-linux-x86_64/"
+  samtools="/gscratch/srlab/programs/samtools-1.9/samtools"
+  reads_dir="/gscratch/mngeorge/data/cgigas_ronit"
+  genome_folder="/gscratch/srlab/sr320/data/Cgig-genome/roslin_M/"
+  source /gscratch/srlab/mngeorge/sbatch_scripts/20210316_cgig_ploidy_stress_bismark.sh
+
+  ${bismark_dir}/bismark_genome_preparation \
+  --verbose \
+  --parallel 28 \
+  --path_to_aligner ${bowtie2_dir} \
+  ${genome_folder}
+
+  # /zr3644_11_R2.fastp-trim.20201206.fq.gz
+
+  find ${reads_dir}*_R1.fastp-trim.20201202.fq.gz \
+  | xargs basename -s _R1.fastp-trim.20201202.fq.gz | xargs -I{} ${bismark_dir}/bismark \
+  --path_to_bowtie ${bowtie2_dir} \
+  -genome ${genome_folder} \
+  -p 8 \
+  -score_min L,0,-0.6 \
+  --non_directional \
+  -1 ${reads_dir}{}_R1.fastp-trim.20201202.fq.gz \
+  -2 ${reads_dir}{}_R2.fastp-trim.20201202.fq.gz \
 
 
+  find *.bam | \
+  xargs basename -s .bam | \
+  xargs -I{} ${bismark_dir}/deduplicate_bismark \
+  --bam \
+  --paired \
+  {}.bam
 
-mkdir -p zmays-snps/{data/seqs,scripts,analysis}
 
+  ${bismark_dir}/bismark_methylation_extractor \
+  --bedGraph --counts --scaffolds \
+  --multicore 28 \
+  --buffer_size 75% \
+  *deduplicated.bam
 
-![](/post_images/121020/tank_upstairs.png)
+  # Bismark processing report
+
+  ${bismark_dir}/bismark2report
+
+  #Bismark summary report
+
+  ${bismark_dir}/bismark2summary
+
+  #run multiqc
+  /gscratch/srlab/programs/anaconda3/bin/multiqc .
+
+  # Sort files for methylkit and IGV
+
+  find *deduplicated.bam | \
+  xargs basename -s .bam | \
+  xargs -I{} ${samtools} \
+  sort --threads 28 {}.bam \
+```
+
+After saving, I then added to the queue:
+
+```sbatch -p srlab -A srlab 20210316_cgig_ploidy_stress_bismark.sh```
+
+You can check the position in the queue using squeue:
+
+![](/post_images/20210316/squeue.png)
+
+We can also copy files to local directory: 
+
+```rsync --archive --progress --verbose mngeorge@mox1:/gscratch/srlab/mngeorge/sbatch_scripts \Users\mattg\Dropbox\github\mattgeorgephd.github.io\mattgeorgephd.github.io\notebook\sbatch_scripts```
