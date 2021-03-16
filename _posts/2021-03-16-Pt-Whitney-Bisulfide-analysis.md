@@ -13,7 +13,7 @@ Funding source: [unknown]() <br />
 Species: *Crassostrea gigas* <br />
 variable: ploidy, desiccation, high temperature <br />
 
-## Background:
+### Background:
 We have bisulfide sequencing data from Ronit's desiccation exposure
 experiments using juvenile pacific oysters. Here is the forked [github repo](https://github.com/mattgeorgephd/project-gigas_ploidy).
 
@@ -22,8 +22,8 @@ List of the progress so far:
 2. Files were added to the [owl server](https://owl.fish.washington.edu/nightingales/C_gigas/)
 3. [Sam ran FastQC](https://robertslab.github.io/sams-notebook/2020/11/10/FastQC-MultiQC-C.gigas-Ploidy-WGBS-Raw-Sequence-Data-from-Ronits-Project-on-Mox.html). Here is the [multiQC report](https://gannet.fish.washington.edu/Atumefaciens/20201110_cgig_fastqc_ronit-ploidy-wgbs/multiqc_report.html)
 
-Here is a list of samples
-| SeqID	    | Library_Name | 	Tissue | 	Ploidy | 	Desiccation	| Heat_Stress |
+Here is a list of samples <br />
+| SeqID	| Library_Name | 	Tissue | Ploidy | Desiccation | Heat_Stress |
 | :---: | :---:   | :---:| :---:| :---:| :---:|
 | zr3534_1 | 	D11-C	| ctenidia	| diploid	| yes| 	no|
 | zr3534_2 | 	D12-C	| ctenidia	| diploid	| yes	| no|
@@ -36,20 +36,19 @@ Here is a list of samples
 | zr3534_9| 	T19-C	| ctenidia	| triploid| 	yes| 	yes|
 | zr3534_10| 	T20-C	| ctenidia	| triploid| 	yes| 	yes|
 
-Desiccation - desiccation for 24 hr at 27C
+Desiccation - desiccation for 24 hr at 27C, <br />
 Heat_stress - 1 hr at 45C  
 
-## Pathway forward:
-Now that we have the WGBS files and FastQC did'nt find any large errors, the next steps is to run [Bismark](https://rawgit.com/FelixKrueger/Bismark/master/Docs/Bismark_User_Guide.html#i-bismark-genome-preparation). The files are pretty big, so instead of running it locally, I will use the resources of our [hyak_mox server]((https://github.com/RobertsLab/hyak_mox/wiki/Running-a-Job). Bismark performs alignments of bisulfite-treated reads to a reference genome and cytosine methylation calls at the same time.
+### Pathway forward:
+Now that we have the WGBS files and FastQC didn't find any large errors, the next steps is to run [Bismark](https://rawgit.com/FelixKrueger/Bismark/master/Docs/Bismark_User_Guide.html#i-bismark-genome-preparation). The files are pretty big, so instead of running it locally, I will use the resources of our [hyak_mox server](https://github.com/RobertsLab/hyak_mox/wiki/Running-a-Job). Bismark performs alignments of bisulfite-treated reads to a reference genome and cytosine methylation calls at the same time.
 
 The steps I will be following during this analysis are:
 
 1. logging into mox server
 2. Generating slurm script (.sh)
+### Step 1: Logging into mox
 
-## Step 1: Logging into mox
-
-  ssh mngeorge@mox.hyak.uw.edu
+```  ssh mngeorge@mox.hyak.uw.edu ```
 
 ![](/post_images/031621/login_successful.png)
 
@@ -58,9 +57,8 @@ The steps I will be following during this analysis are:
 Slurm is an open source, fault-tolerant, and highly scalable cluster management and job scheduling system for large and small Linux clusters. Useful information can be found in the [wiki](https://github.com/RobertsLab/hyak_mox/wiki/Running-a-Job) and this [example](https://genefish.wordpress.com/2021/03/05/job-nameron-rosm) that Steven provided.
 
 To configure the job, I first had to develop my file structure:
-```
-mkdir -p mneorge/{analyses,blastdb,data,jobs,programs,sbatch_scripts}
-```
+``` mkdir -p mneorge/{analyses,blastdb,data,jobs,programs,sbatch_scripts} ```
+
 parent folder: /gscratch/srlab/mngeorge
 contents: analyses  blastdb  data  jobs  programs  sbatch_scripts
 
@@ -72,7 +70,7 @@ cp -avr /gscratch/srlab/sr320/data/cg /gscratch/srlab/mngeorge/data/cgigas_ronit
 I then recreated a sbatch file within the sbatch_scripts (20210316_cgig_ploidy_stress_bismark.sh) subfolder to run bismark on the data.
 
 Here is the code:
-``` {
+```
   GNU nano 2.3.1                          File: 20210316_cgig_ploidy_stress_bismark.sh
 
   #!/bin/bash
@@ -160,12 +158,15 @@ You can check the position in the queue using squeue:
 
 ![](/post_images/031621/squeue.png)
 
-As well as the job status:
+As well as the job status using the job number:
 
-```scontrol show job 1740292```
+``` scontrol show job 1740292 ```
 
-![](https://github.com/mattgeorgephd/mattgeorgephd.github.io/blob/14e2cb9fb5f3e0bf3dbd04dae5a5b2fe5b3e5ef1/post_images/031621/job_status.png)
+![](/post_images/031621/job_status.png)
 
 We can also copy files to local directory:
 
-```rsync --archive --progress --verbose mngeorge@mox1:/gscratch/srlab/mngeorge/sbatch_scripts \Users\mattg\Dropbox\github\mattgeorgephd.github.io\mattgeorgephd.github.io\notebook\sbatch_scripts```
+``` {
+rsync --archive --progress --verbose mngeorge@mox1:/gscratch/srlab/mngeorge/sbatch_scripts \Users\mattg\Dropbox\github\mattgeorgephd.github.io\mattgeorgephd.github.io\notebook\sbatch_scripts
+
+```
