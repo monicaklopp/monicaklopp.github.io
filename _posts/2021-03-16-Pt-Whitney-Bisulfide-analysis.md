@@ -24,7 +24,7 @@ List of the progress so far:
 
 Here is a list of samples
 | SeqID	    | Library_Name | 	Tissue | 	Ploidy | 	Desiccation	| Heat_Stress |
-| --------- | :--------:   | :------:| :------:| :--------:| :---:|
+| :---: | :---:   | :---:| :---:| :---:| :---:|
 | zr3534_1 | 	D11-C	| ctenidia	| diploid	| yes| 	no|
 | zr3534_2 | 	D12-C	| ctenidia	| diploid	| yes	| no|
 | zr3534_3 | 	D13-C	| ctenidia	| diploid	| yes	| no|
@@ -58,28 +58,29 @@ The steps I will be following during this analysis are:
 Slurm is an open source, fault-tolerant, and highly scalable cluster management and job scheduling system for large and small Linux clusters. Useful information can be found in the [wiki](https://github.com/RobertsLab/hyak_mox/wiki/Running-a-Job) and this [example](https://genefish.wordpress.com/2021/03/05/job-nameron-rosm) that Steven provided.
 
 To configure the job, I first had to develop my file structure:
-
-  mkdir -p mneorge/{analyses,blastdb,data,jobs,programs,sbatch_scripts}
-
+```
+mkdir -p mneorge/{analyses,blastdb,data,jobs,programs,sbatch_scripts}
+```
 parent folder: /gscratch/srlab/mngeorge
 contents: analyses  blastdb  data  jobs  programs  sbatch_scripts
 
 After completed, I copied ronit's data to my data folder:
-
-  cp -avr /gscratch/srlab/sr320/data/cg /gscratch/srlab/mngeorge/data/cgigas_ronit
+```
+cp -avr /gscratch/srlab/sr320/data/cg /gscratch/srlab/mngeorge/data/cgigas_ronit
+```
 
 I then recreated a sbatch file within the sbatch_scripts (20210316_cgig_ploidy_stress_bismark.sh) subfolder to run bismark on the data.
 
 Here is the code:
-```
+``` {
   GNU nano 2.3.1                          File: 20210316_cgig_ploidy_stress_bismark.sh
 
   #!/bin/bash
   ## Job Name
   #SBATCH --job-name=ronit-bismark
   ## Allocation Definition
-  #SBATCH --account=coenv
-  #SBATCH --partition=coenv
+  #SBATCH --account=srlab
+  #SBATCH --partition=srlab
   ## Nodes
   #SBATCH --nodes=1
   ## Walltime (days-hours:minutes:seconds format)
@@ -153,12 +154,18 @@ Here is the code:
 
 After saving, I then added to the queue:
 
-```sbatch -p srlab -A srlab 20210316_cgig_ploidy_stress_bismark.sh```
+```sbatch 20210316_cgig_ploidy_stress_bismark.sh```
 
 You can check the position in the queue using squeue:
 
-![](/post_images/20210316/squeue.png)
+![](/post_images/031621/squeue.png)
 
-We can also copy files to local directory: 
+As well as the job status:
+
+```scontrol show job 1740292```
+
+![](https://github.com/mattgeorgephd/mattgeorgephd.github.io/blob/14e2cb9fb5f3e0bf3dbd04dae5a5b2fe5b3e5ef1/post_images/031621/job_status.png)
+
+We can also copy files to local directory:
 
 ```rsync --archive --progress --verbose mngeorge@mox1:/gscratch/srlab/mngeorge/sbatch_scripts \Users\mattg\Dropbox\github\mattgeorgephd.github.io\mattgeorgephd.github.io\notebook\sbatch_scripts```
