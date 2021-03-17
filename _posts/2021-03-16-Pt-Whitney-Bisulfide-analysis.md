@@ -50,24 +50,24 @@ The steps I will be following during this analysis are:
 
 ### Step 1: Logging into mox
 
-```  ssh mngeorge@mox.hyak.uw.edu ```
+```ssh mngeorge@mox.hyak.uw.edu```
 
 ![](/post_images/031621/login_successful.png)
 
-## Step 2: slurm script and job scheduler
+### Step 2: slurm script and job scheduler
 
-Slurm is an open source, fault-tolerant, and highly scalable cluster management and job scheduling system for large and small Linux clusters. Useful information can be found in the [wiki](https://github.com/RobertsLab/hyak_mox/wiki/Running-a-Job) and this [example](https://genefish.wordpress.com/2021/03/05/job-nameron-rosm) that Steven provided.
+Slurm is an open source, fault-tolerant, and highly scalable cluster management and job scheduling system for large and small Linux clusters. Useful information can be found in the [wiki](https://github.com/RobertsLab/hyak_mox/wiki/Running-a-Job) and this [example](https://genefish.wordpress.com/2021/03/05/job-nameron-rosm) that Steven provided. Yaamini has also outlined a great pipeline for [analysis](https://github.com/RobertsLab/project-virginica-oa/blob/master/notebooks/2018-04-27-Gonad-Methylation-Bismark.ipynb) and [reporting](https://github.com/RobertsLab/project-virginica-oa/blob/master/notebooks/2018-05-22-Gonad-Methylation-Full-Samples.ipynb).
 
-To configure the job, I first had to develop my file structure:
+To configure the job, I first had to develop my file structure:  <br />
+
 ``` mkdir -p mneorge/{analyses,blastdb,data,jobs,programs,sbatch_scripts} ```
 
-parent folder: /gscratch/srlab/mngeorge
-contents: analyses  blastdb  data  jobs  programs  sbatch_scripts
+*parent folder*: /gscratch/srlab/mngeorge  <br />
+*contents*: analyses, blastdb,  data,  jobs,  programs,  sbatch_scripts
 
-After completed, I copied ronit's data to my data folder:
-```
-cp -avr /gscratch/srlab/sr320/data/cg /gscratch/srlab/mngeorge/data/cgigas_ronit
-```
+After completed, I copied ronit's data to my data folder:  <br />
+
+```cp -avr /gscratch/srlab/sr320/data/cg /gscratch/srlab/mngeorge/data/cgigas_ronit ```
 
 I then recreated a sbatch file within the sbatch_scripts (20210316_cgig_ploidy_stress_bismark.sh) subfolder to run bismark on the data.
 
