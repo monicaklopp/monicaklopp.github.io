@@ -47,6 +47,7 @@ The steps I will be following during this analysis are:
 
 1. logging into mox server
 2. Generating slurm script (.sh)
+
 ### Step 1: Logging into mox
 
 ```  ssh mngeorge@mox.hyak.uw.edu ```
