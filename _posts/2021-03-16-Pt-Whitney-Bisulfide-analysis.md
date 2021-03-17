@@ -22,19 +22,20 @@ List of the progress so far:
 2. Files were added to the [owl server](https://owl.fish.washington.edu/nightingales/C_gigas/)
 3. [Sam ran FastQC](https://robertslab.github.io/sams-notebook/2020/11/10/FastQC-MultiQC-C.gigas-Ploidy-WGBS-Raw-Sequence-Data-from-Ronits-Project-on-Mox.html). Here is the [multiQC report](https://gannet.fish.washington.edu/Atumefaciens/20201110_cgig_fastqc_ronit-ploidy-wgbs/multiqc_report.html)
 
-Here is a list of samples <br />
-| SeqID	| Library_Name | 	Tissue | Ploidy | Desiccation | Heat_Stress |
-| :---: | :---:   | :---:| :---:| :---:| :---:|
+Here is a list of samples
+
+| SeqID	   | Library Name | 	Tissue | Ploidy | Desiccation | Heat Stress |
+| :------: | :--------:   | :-------:| :-----:| :----------:| :----------:|
 | zr3534_1 | 	D11-C	| ctenidia	| diploid	| yes| 	no|
 | zr3534_2 | 	D12-C	| ctenidia	| diploid	| yes	| no|
 | zr3534_3 | 	D13-C	| ctenidia	| diploid	| yes	| no|
-| zr3534_4| 	D19-C	| ctenidia	| diploid	| yes	| yes|
-| zr3534_5| 	D20-C	| ctenidia	| diploid	| yes	| yes|
-| zr3534_6| 	T11-C	| ctenidia	| triploid| 	yes	| no|
-| zr3534_7| 	T12-C	| ctenidia	| triploid| 	yes	| no|
-| zr3534_8| 	T13-C	| ctenidia	| triploid| 	yes| 	no|
-| zr3534_9| 	T19-C	| ctenidia	| triploid| 	yes| 	yes|
-| zr3534_10| 	T20-C	| ctenidia	| triploid| 	yes| 	yes|
+| zr3534_4 | 	D19-C	| ctenidia	| diploid	| yes	| yes|
+| zr3534_5 | 	D20-C	| ctenidia	| diploid	| yes	| yes|
+| zr3534_6 | 	T11-C	| ctenidia	| triploid | 	yes	| no|
+| zr3534_7 | 	T12-C	| ctenidia	| triploid | 	yes	| no|
+| zr3534_8 | 	T13-C	| ctenidia	| triploid | 	yes| 	no|
+| zr3534_9 | 	T19-C	| ctenidia	| triploid | 	yes| 	yes|
+| zr3534_10 | 	T20-C	| ctenidia	| triploid | 	yes| 	yes|
 
 Desiccation - desiccation for 24 hr at 27C, <br />
 Heat_stress - 1 hr at 45C  
