@@ -166,9 +166,11 @@ As well as the job status using the job number:
 
 ![](/post_images/031621/job_status.png)
 
-We can also copy files to local directory:
+Once the job is done, the resulting files should be stored on our lab server [gannet](https://gannet.fish.washington.edu:5001/). Here is an example script using rsync:
 
-``` {
-rsync --archive --progress --verbose mngeorge@mox1:/gscratch/srlab/mngeorge/sbatch_scripts \Users\mattg\Dropbox\github\mattgeorgephd.github.io\mattgeorgephd.github.io\notebook\sbatch_scripts
+```
+  ssh mngeorge@gannet.fish.washington.edu <login>
+  cd /volume2/web/cgigas-ploidy/globalmeth/
+  rsync -avz --progress --verbose mngeorge@mox.hyak.uw.edu:/gscratch/scrubbed/sr320/030521-ronrosM 030521-ronrosM
 
 ```
