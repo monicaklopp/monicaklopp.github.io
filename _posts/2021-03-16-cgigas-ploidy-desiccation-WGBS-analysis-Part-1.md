@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tues. Mar. 16, 2021
-subtitle: Bisulfide sequencing analysis - getting started
+subtitle: Bisulfide sequencing analysis - Part 1
 gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
 tags: oyster temperature triploid diploid bismark mox bowtie2
@@ -38,7 +38,7 @@ Here is a list of samples
 | zr3534_10 | 	T20-C	| ctenidia	| triploid | 	yes| 	yes|
 
 Desiccation - desiccation for 24 hr at 27C, <br />
-Heat_stress - 1 hr at 45C  
+Heat_stress - 1 hr at 45C
 
 ### Pathway forward:
 Now that we have the WGBS files and FastQC didn't find any large errors, the next steps is to run [Bismark](https://rawgit.com/FelixKrueger/Bismark/master/Docs/Bismark_User_Guide.html#i-bismark-genome-preparation). The files are pretty big, so instead of running it locally, I will use the resources of our [hyak_mox server](https://github.com/RobertsLab/hyak_mox/wiki/Running-a-Job). Bismark performs alignments of bisulfite-treated reads to a reference genome and cytosine methylation calls at the same time.
