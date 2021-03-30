@@ -8,7 +8,7 @@ tags: oyster temperature triploid diploid bismark mox bowtie2
 comments: true
 ---
 
-Project name: RONIT-GIGAS-DESICCATION-3N <br />
+Project name: [project-gigas_ploidy](https://github.com/mattgeorgephd/project-gigas_ploidy) <br />
 Funding source: [unknown]() <br />
 Species: *Crassostrea gigas* <br />
 variable: ploidy, desiccation, high temperature <br />
