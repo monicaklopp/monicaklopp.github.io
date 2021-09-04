@@ -17,13 +17,12 @@ variable: ploidy, desiccation, high temperature <br />
 This is continuation of the WGBS analysis I've been running on Ronit's data. The previous post can be found [here](https://mattgeorgephd.github.io/cgigas-ploidy-desiccation-WGBS-analysis-Part-1/). I'll be following Yaamini's [walkthrough](https://yaaminiv.github.io/Hawaii-Gigas-Methylation-Analysis-Part5/) in this post to look at the results of bismark.
 
 ### List of the progress so far:
-1. Completed bismark on mox. The output was then transferred to gannet by running the rsync command as outlined in the previous post. The output is available [here](https://gannet.fish.washington.edu/cgigas-ploidy/globalmeth/030521-ronrosM/030521-ronrosM/).
+1. Completed bismark on mox. The output was then transferred to gannet by running the rsync command as outlined in the previous post. The output is available [here](https://gannet.fish.washington.edu/panopea/030521-ronrosM/).
 2. The MultiQC report can be found [here](https://gannet.fish.washington.edu/cgigas-ploidy/globalmeth/030521-ronrosM/030521-ronrosM/multiqc_report.html).
 
-### Pathway forward:
+### Goals for today:
 1. Look at MultiQC report.
 2. Determine effect of ploidy of %mCpG
-3. Continue analysis with [MethylKit](https://bioconductor.org/packages/release/bioc/vignettes/methylKit/inst/doc/methylKit.html) to identify differentially methylated loci (DMLs).
 
 ### Step 1: Look at MultiQC report
 
@@ -51,4 +50,5 @@ The github repo with the WGBS data and analyses can be found [here](https://gith
 
 One limitation of this dataset is I don't have any unstressed animals for comparison. However, it appears ploidy was a significant factor that impacted %mCpG after desiccation (p=0.0175), while their was no measurable effect of subsequent heat shock (p=0.9119). With this result, I lumped together the two groups to generate the second figure, comparing %mCpG expression after desiccation stress (p=0.0108; n=5 per group).
 
-### Step 3: Use Methylkit to locate DMLs
+### Pathway forward:
+1. Continue analysis with [MethylKit](https://bioconductor.org/packages/release/bioc/vignettes/methylKit/inst/doc/methylKit.html) to identify differentially methylated loci (DMLs).

@@ -170,7 +170,7 @@ Once the job is done, the resulting files should be stored on our lab server [ga
 
 ```
   ssh mngeorge@gannet.fish.washington.edu <login>
-  cd /volume2/web/cgigas-ploidy/globalmeth/
+  cd /volume2/web/panopea/030521-ronrosM/
   rsync -avz --progress --verbose mngeorge@mox.hyak.uw.edu:/gscratch/scrubbed/sr320/030521-ronrosM 030521-ronrosM
 
 ```
