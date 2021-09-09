@@ -1,20 +1,20 @@
 ---
 layout: post
 title: Sat. Sept. 04, 2021
-subtitle: Update & Montly Goals
+subtitle: Update & Monthly Goals
 gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
 tags: update monthly goals
 comments: true
 ---
 
-## Update
+### Update
 
 I've been a bit behind in notebook posting, so I thought I would take this time while William is sleeping to get back on track. Below are my monthly goals for September. The main hurdles seem to be getting the desiccation manuscript off the ground, while also collecting data for the PSMFC mussel project.
 
 I also plan on getting my github account organized.
 
-## Monthly Goals
+### Monthly Goals
 
 1. Get histological samples submitted to [UW Pathology](https://dlmp.uw.edu/research/pathology-research-services-lab)
 2. Collect tissue for the [gigas-WGS-ploidy](https://github.com/mattgeorgephd/gigas-WGS-ploidy) project
