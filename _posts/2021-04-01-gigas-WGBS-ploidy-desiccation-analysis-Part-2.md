@@ -18,7 +18,7 @@ This is continuation of the WGBS analysis I've been running on Ronit's data. The
 
 ### List of the progress so far:
 1. Completed bismark on mox. The output was then transferred to gannet by running the rsync command as outlined in the previous post. The output is available [here](https://gannet.fish.washington.edu/panopea/030521-ronrosM/).
-2. The MultiQC report can be found [here](https://gannet.fish.washington.edu/cgigas-ploidy/globalmeth/030521-ronrosM/030521-ronrosM/multiqc_report.html).
+2. The MultiQC report can be found [here](https://gannet.fish.washington.edu/panopea/030521-ronrosM/multiqc_report.html.
 
 ### Goals for today:
 1. Look at MultiQC report.
