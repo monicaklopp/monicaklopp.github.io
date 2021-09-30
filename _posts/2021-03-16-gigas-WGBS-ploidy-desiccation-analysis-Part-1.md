@@ -8,14 +8,14 @@ tags: oyster temperature triploid diploid bismark mox bowtie2
 comments: true
 ---
 
-Project name: [project-gigas_ploidy](https://github.com/mattgeorgephd/project-gigas_ploidy) <br />
+Project name: [gigas-WGBS-ploidy-desiccation](https://github.com/mattgeorgephd/gigas-WGBS-ploidy-desiccation) <br />
 Funding source: [unknown]() <br />
 Species: *Crassostrea gigas* <br />
 variable: ploidy, desiccation, high temperature <br />
 
 ### Background:
 We have bisulfide sequencing data from Ronit's desiccation exposure
-experiments using juvenile pacific oysters. Here is the forked [github repo](https://github.com/mattgeorgephd/project-gigas_ploidy).
+experiments using juvenile pacific oysters. Here is the forked [github repo](https://github.com/mattgeorgephd/gigas-WGBS-ploidy-desiccation).
 
 List of the progress so far:
 1. Received [WGBS](https://robertslab.github.io/sams-notebook/2020/11/10/Data-Received-C.gigas-Ploidy-WGBS-from-Ronits-Project-via-ZymoResearch.html) data from ZymoResearch

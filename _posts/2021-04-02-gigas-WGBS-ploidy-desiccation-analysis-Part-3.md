@@ -8,24 +8,24 @@ tags: oyster temperature triploid diploid bismark methylkit DML
 comments: true
 ---
 
-Project name: [project-gigas_ploidy](https://github.com/mattgeorgephd/project-gigas_ploidy) <br />
+Project name: [gigas-WGBS-ploidy-desiccation](https://github.com/mattgeorgephd/gigas-WGBS-ploidy-desiccation) <br />
 Funding source: [unknown]() <br />
 Species: *Crassostrea gigas* <br />
 variable: ploidy, desiccation, high temperature <br />
 
 ### Background:
-This is continuation of the WGBS analysis I've been running on Ronit's data. The previous post can be found [here](https://mattgeorgephd.github.io/cgigas-ploidy-desiccation-WGBS-analysis-Part-2/). Last time I looked at the MultiQC report and quantified differences in %mCpG between diploid and triploid cgigas after desiccation at 27C for 24hrs.
+This is continuation of the WGBS analysis I've been running on Ronit's data. The previous post can be found [here](https://mattgeorgephd.github.io/gigas-WGBS-ploidy-desiccation-analysis-Part-2/). Last time I looked at the MultiQC report and quantified differences in %mCpG between diploid and triploid cgigas after desiccation at 27C for 24hrs.
 
 ### List of the progress so far:
 1. Completed bismark on mox. The output was then transferred to gannet by running the rsync command as outlined in the previous post. The output is available [here](https://gannet.fish.washington.edu/panopea/030521-ronrosM/).
-2. The MultiQC report can be found [here](https://gannet.fish.washington.edu/cgigas-ploidy/globalmeth/030521-ronrosM/030521-ronrosM/multiqc_report.html).
+2. The MultiQC report can be found [here](https://gannet.fish.washington.edu/panopea/030521-ronrosM/multiqc_report.html).
 3. Moved
 
 ### Goal for today:
 Use [MethylKit](https://bioconductor.org/packages/release/bioc/vignettes/methylKit/inst/doc/methylKit.html) to identify differentially methylated loci (DMLs) between diploid and triploid cgigas after desiccation stress. I'll be following Yaamini's [walkthrough](https://yaaminiv.github.io/DML-Analysis-Part13/) in this post to process *.deduplicated.sorted.bam files, running an modified version of this [R markdown file](https://github.com/RobertsLab/project-virginica-oa/blob/master/analyses/2018-10-11-MethylKit-Parameter-Testing/2018-10-11-MethylKit-Parameter-Testing.Rmd) that produces results using 1x, 3x, and 5x coverage.
 
 ### Step 1: Get MethylKit installed
-My R markdown file can be found [here](https://github.com/mattgeorgephd/project-gigas_ploidy/blob/master/bisulfide_analysis/WGBS/WGBS_cgigas_ploidy_Methylkit.Rmd). After some version compatibility issues, I was able to get "devtools" and "methylkit" installed and up-to-date by running R Studio as an administrator and running the following code chunk, opting to update all:
+My R file can be found [here](https://github.com/mattgeorgephd/gigas-WGBS-ploidy-desiccation/blob/99dd32b71c4c8de6c08dad796de0bc4379c9c3c2/bisulfide_analysis/WGBS/code/2_WGBS_Methylkit.R). After some version compatibility issues, I was able to get "devtools" and "methylkit" installed and up-to-date by running R Studio as an administrator and running the following code chunk, opting to update all:
 
 ```{r}
 install.packages("devtools") #Install the devtools package
@@ -41,11 +41,11 @@ library(methylKit) #Load methylkit
 
 browseVignettes("methylKit") #methylKit manual
 ```
-The important part seemed to be to install [BiocManager](https://bioconductor.org/packages/release/bioc/html/methylKit.html) version 3.12, as it is capapable with R version 4.0.4.
+The important part seemed to be to install [BiocManager](https://bioconductor.org/packages/release/bioc/html/methylKit.html) version 3.12, as it is compatible with R version 4.0.4.
 
 ### Step 2: Set paths to *.deduplicated.sorted.bam files
 
-The next step was to generate a list of files (and their locations) to be analyzed. Since my files were on gannet in this [folder](https://gannet.fish.washington.edu/panopea/030521-ronrosM/) and I plan on running the Rmd script locally for the time being, I downloaded the files on my spare local data drive (E:/). From there, I mapped the location as follows:
+The next step was to generate a list of files (and their locations) to be analyzed. Since my files were on gannet in this [folder](https://gannet.fish.washington.edu/panopea/030521-ronrosM/) and I plan on running the R script locally for the time being, I downloaded the files on my spare local data drive (E:/). From there, I mapped the location as follows:
 
 ```{r}
 analysisFiles <- list("E:/bam_files/zr3534_1_R1.fastp-trim.20201202_bismark_bt2_pe.deduplicated.sorted.bam",

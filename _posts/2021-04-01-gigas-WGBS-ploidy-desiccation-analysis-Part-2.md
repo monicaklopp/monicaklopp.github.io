@@ -8,7 +8,7 @@ tags: oyster temperature triploid diploid bismark methylkit DML
 comments: true
 ---
 
-Project name: [project-gigas_ploidy](https://github.com/mattgeorgephd/project-gigas_ploidy) <br />
+Project name: [gigas-WGBS-ploidy-desiccation](https://github.com/mattgeorgephd/gigas-WGBS-ploidy-desiccation) <br />
 Funding source: [unknown]() <br />
 Species: *Crassostrea gigas* <br />
 variable: ploidy, desiccation, high temperature <br />
