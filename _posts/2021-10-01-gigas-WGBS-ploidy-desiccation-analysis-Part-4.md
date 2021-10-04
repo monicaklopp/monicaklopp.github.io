@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Thurs. Sept. 30, 2021
+title: Fri. Oct. 30, 2021
 subtitle: Bisulfide sequencing analysis - Part 4
 gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
