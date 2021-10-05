@@ -82,5 +82,3 @@ processedFilesCov1 <- processBismarkAln(location = analysisFiles, sample.id = sa
 This chunk was run with mincov = 1, 3, or 5. This step took a long time! On my desktop machine (Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz), it averaged 1 sample every 30 mins.
 
 I know that Yaamini is working on a mox script for this step. I'll link it [here]() when/if she finishes it.
-
-### Step 4: Obtain methylation and coverage plots

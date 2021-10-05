@@ -36,6 +36,10 @@ Ploidy - All 529,068 CpGs
 Ploidy - 2,535 DML only
 ![](/post_images/100421/2021-10-04-DML-Only-Yaamini-PCA.png)
 
+Next, lets analyze just Ronit's data. He has 5 diploid and 5 triploids that are both heated. Using a 10x coverage, 1,921,856 CpGs were identified. Looking at the impact of ploidy, the following differentially methylated loci were generated:
+
+DMLs = 60,697 identified, 10,290 Hyper, 50,407 hypo
+
 Next, lets analyze Yaamini's samples along with Ronit's data. Methylkit limits the comparison to CpGs that are present in both datasets, so adding them together will theoretically trim from both. Coverage files (.cov) from Bismark were processed using methRead. With both datasets together we have 22 samples (11 diploid and triploids), 10 Heated and 12 controls. Ploidy information was included in the treatment parameter using 0 = diploid, 1 = triploid.
 
 ```
