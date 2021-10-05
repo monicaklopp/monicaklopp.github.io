@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fri. Oct. 30, 2021
+title: Fri. Oct. 1, 2021
 subtitle: Bisulfide sequencing analysis - Part 4
 gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
@@ -14,19 +14,30 @@ Species: *Crassostrea gigas* <br />
 variable: ploidy, desiccation, high temperature <br />
 
 ### Background
-After looking through the MethylKit output generated from Ronit's samples, we are having trouble making sense of our results without the inclusion of diploid and triploid controls. To address this issue, Steven suggested that we include some of the other WGBS data we have for pacific oysters, namely from Yammini's hawaii data, Roberto's samples, and the Manchester gonad samples, as outlined within this [notebook post](https://sr320.github.io/Gigome/).
+After looking through the MethylKit output generated from Ronit's samples, we are having trouble making sense of our results without the inclusion of diploid and triploid controls. To address this issue, Steven suggested that we include some of the other WGBS data we have for pacific oysters, namely from Yaamini's Hawaii data, Roberto's samples, and the Manchester gonad samples, as outlined within this [notebook post](https://sr320.github.io/Gigome/).
 
 Steven ran all of these through bismark and the resulting samples are stored on gannet [here](https://gannet.fish.washington.edu/seashell/bu-mox/scrubbed/061021-big/).
 
-Here I will add Yammini's controls to Ronnit's data and run methylkit again.
-
-### Methylkit analysis
+### Methylkit analysis - Yaamini's 2n/3n controls
 
 The first thing I did was move the files Steven generated out of the scrubbed folder and into [my folder](https://gannet.fish.washington.edu/panopea/061021-big)
 
 Next I ran Methylkit using this [R script]().
 
-First, the files coverage files from Bismark were processed using methRead. With Yammini's controls, we have 22 samples (11 diploid and triploids), 10 Heated and 12 controls. Ploidy information was included in the treatment parameter using 0 = diploid, 1 = triploid.  
+First, lets analyze just Yaamini's controls (6 diploid and 6 triploid) to look at differences across ploidy. Using a 10x coverage, 529,068 CpGs were identified. Looking at just the impact of ploidy, the following differentially methylated loci were generated:
+
+DMLs = 2535 identified, 1973 Hyper, 562 hypo
+
+From here we can generate PCAs that look at the distribution of CpG and DML across ploidy.
+
+Ploidy - All 529,068 CpGs
+![](/post_images/100421/2021-10-04-All-Yaamini-PCA.png)
+
+Ploidy - 2,535 DML only
+![](/post_images/100421/2021-10-04-DML-Only-Yaamini-PCA.png)
+
+Next, lets analyze Yaamini's samples along with Ronit's data. Methylkit limits the comparison to CpGs that are present in both datasets, so adding them together will theoretically trim from both. Coverage files (.cov) from Bismark were processed using methRead. With both datasets together we have 22 samples (11 diploid and triploids), 10 Heated and 12 controls. Ploidy information was included in the treatment parameter using 0 = diploid, 1 = triploid.
+
 ```
 processedFiles <- methylKit::methRead(analysisFiles,
                                       sample.id = as.list(sampleMetadata$sampleID),
@@ -88,5 +99,17 @@ Heated, ploidy-covariate, 2351 DML only
 
 From all the DML tables, the following charts were then generated:
 
+Table 1. DML counts from each analysis
+![](/post_images/100421/DML_count_table.png)
+
+It looks like adding Ronit's samples reduced the number of ploidy DMLs by 59.1%.
+
 DML count comparison
-![](/post_images/100421/DML_count_figure.png)
+![](/post_images/100421/difference.png)
+
+Looking at just the 200 DMLs that were in both the ploidy and heat analysis:
+
+1. 14.0% - both hypermethylated (++)
+2. 22.5% - ploidy hypermethylated, heat hypomethylated (+-)
+3. 39.0% - ploidy hypomethylated , heat hypermethylated (-+)
+4. 24.5% - both hypomethylated (--)
