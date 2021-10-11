@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Fri. Oct. 1, 2021
-subtitle: Bisulfide sequencing analysis - Part 4
+title: Wed. Oct. 6, 2021
+subtitle: Bisulfide sequencing analysis - Part 5
 gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
-tags: oyster temperature triploid diploid methylkit DML
+tags: oyster temperature triploid diploid methylkit DML "genome feature location"
 comments: true
 ---
 
