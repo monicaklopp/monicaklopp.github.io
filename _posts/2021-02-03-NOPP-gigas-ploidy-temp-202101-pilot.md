@@ -8,22 +8,7 @@ tags: oyster temperature triploid diploid metabolic rate SMR
 comments: true
 ---
 
-Project name: NOPP-cgigas-ploidy-temperature <br />
+Project name: [NOPP-gigas-ploidy-temp](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp) <br />
 Funding source: [National Oceanographic Partnership Program](https://www.nopp.org/) <br />
 Species: *Crassostrea gigas* <br />
-variable: ploidy, high temperature <br />
-
-### Background:
-
-
-List of the progress so far:
-1.
-2.
-3.
-
-
-
-### Pathway forward:
-
-
-### Step 1:
+variable: ploidy, elevated seawater temperature, desiccation <br />
