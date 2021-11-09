@@ -32,3 +32,4 @@ comments: true
 6. Apply to UW Tacoma (11/15)
 7. Analyze respirometry datasets and update [NOPP-gigas-ploidy-temp](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp)
 8. Prepare presentation for NOAA-physiology meeting (11/18)
+9. CICOES Research Development [Grant](https://genefish.slack.com/archives/C02MCEN1C/p1635276149007700) (12/13)
