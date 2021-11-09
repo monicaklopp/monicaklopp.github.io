@@ -26,7 +26,7 @@ comments: true
 ### Monthly Goals for November
 
 1. Complete gigas-WGBS-ploidy-desiccation [manuscript](https://docs.google.com/document/d/17mcGDI-TWmU4vgBXmiXmeofe4qEuFH5inBKBHhG9tzg/edit)
-2. Submit BMC genomics Review
+2. ~~Submit BMC genomics Review~~
 4. Submit RNA samples to UT Austin
 5. Complete PSMFC Semi-Annual Report (11/15)
 6. Apply to UW Tacoma (11/15)
