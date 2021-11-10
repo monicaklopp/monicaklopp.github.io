@@ -30,16 +30,28 @@ Table 1. Summary of student evaluation ratings for courses taught at the Univers
 
 ### Links to evaluations
 
-[George-SP18-BIOL200AG](/docs/teaching_evals/1_George-SP18-BIOL200AG.pdf) </br>
-[George-SP18-BIOL200AN](/docs/teaching_evals/2_George-SP18-BIOL200AN.pdf) </br>
-[George-SU17-BIOL200AB](/docs/teaching_evals/3_George-SU17-BIOL200AB.pdf) </br>
-[George-WI17-BIOL200BB](/docs/teaching_evals/4_George-WI17-BIOL200BB.pdf) </br>
-[George-WI17-BIOL200BN](/docs/teaching_evals/5_George-WI17-BIOL200BN.pdf) </br>
-[George-AU17-BIOL180AT](/docs/teaching_evals/6_George-AU17-BIOL180AT.pdf) </br>
-[George-AU17-BIOL180AR](/docs/teaching_evals/7_George-AU17-BIOL180AR.pdf) </br>
-[George-AU16-BIOL180BC](/docs/teaching_evals/8_George-AU16-BIOL180BC.pdf) </br>
-[George-AU16-BIOL180BA](/docs/teaching_evals/9_George-AU16-BIOL180BA.pdf) </br>
-[George-SP17-BIOL355AA](/docs/teaching_evals/10_George-SP17-BIOL355AA.pdf) </br>
-[George-SP17-BIOL355AB](/docs/teaching_evals/11_George-SP17-BIOL355AB.pdf) </br>
-[George-SP17-BIOL355AC](/docs/teaching_evals/12_George-SP17-BIOL355AC.pdf) </br>
-[George-SU12-BIOL533B](/docs/teaching_evals/13_George-SU12-BIOL533B.pdf) </br>
+[George-SP18-BIOL200AG](https://mattgeorgephd.github.io/docs/teaching_evals/1_George-SP18-BIOL200AG.pdf)
+
+[George-SP18-BIOL200AN](https://mattgeorgephd.github.io/docs/teaching_evals/2_George-SP18-BIOL200AN.pdf)
+
+[George-SU17-BIOL200AB](https://mattgeorgephd.github.io/docs/teaching_evals/3_George-SU17-BIOL200AB.pdf)
+
+[George-WI17-BIOL200BB](https://mattgeorgephd.github.io/docs/teaching_evals/4_George-WI17-BIOL200BB.pdf)
+
+[George-WI17-BIOL200BN](https://mattgeorgephd.github.io/docs/teaching_evals/5_George-WI17-BIOL200BN.pdf)
+
+[George-AU17-BIOL180AT](https://mattgeorgephd.github.io/docs/teaching_evals/6_George-AU17-BIOL180AT.pdf)
+
+[George-AU17-BIOL180AR](https://mattgeorgephd.github.io/docs/teaching_evals/7_George-AU17-BIOL180AR.pdf)
+
+[George-AU16-BIOL180BC](https://mattgeorgephd.github.io/docs/teaching_evals/8_George-AU16-BIOL180BC.pdf)
+
+[George-AU16-BIOL180BA](https://mattgeorgephd.github.io/docs/teaching_evals/9_George-AU16-BIOL180BA.pdf)
+
+[George-SP17-BIOL355AA](https://mattgeorgephd.github.io/docs/teaching_evals/10_George-SP17-BIOL355AA.pdf)
+
+[George-SP17-BIOL355AB](https://mattgeorgephd.github.io/docs/teaching_evals/11_George-SP17-BIOL355AB.pdf)
+
+[George-SP17-BIOL355AC](https://mattgeorgephd.github.io/docs/teaching_evals/12_George-SP17-BIOL355AC.pdf)
+
+[George-SU12-BIOL533B](https://mattgeorgephd.github.io/docs/teaching_evals/13_George-SU12-BIOL533B.pdf)
