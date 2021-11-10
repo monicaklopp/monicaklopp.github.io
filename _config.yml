@@ -19,6 +19,7 @@ navbar-links:
   Lab Notebook: "notebook"
   Publications: "publications"
   Outreach: "outreach"
+  Teaching: "teaching"
 
 # --- Logo --- #
 
@@ -43,7 +44,7 @@ social-network-links:
   ORCID: 0000-0003-1264-8667
   github: mattgeorgephd
   linkedin: matt-george-65a4b94b
-  
+
 #  reddit: yourname
 #  linkedin: matt-george-65a4b94b
 #  xing: yourname
@@ -282,4 +283,3 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
