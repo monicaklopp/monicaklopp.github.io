@@ -30,7 +30,7 @@ Table 1. Summary of student evaluation ratings for courses taught at the Univers
 
 ### Links to evaluations
 
-[George-SP18-BIOL200AG](https://mattgeorgephd.github.io/docs/teaching_evals/1_George_SP18_BIOL200AG.pdf)
+[George-SP18-BIOL200AG]("https://mattgeorgephd.github.io/docs/teaching_evals/1_George_SP18_BIOL200AG.pdf")
 
 [George-SP18-BIOL200AN](https://mattgeorgephd.github.io/docs/teaching_evals/2_George-SP18-BIOL200AN.pdf)
 
