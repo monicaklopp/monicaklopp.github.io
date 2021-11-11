@@ -16,13 +16,13 @@ Invertebrate Zoology (x2) - Friday Harbor Laboratories </br>
 
 |     Year    |     Course    |     Description    |     Role    | Institution |
 |:-------------:|:--------------:|:--------------:|:----------------:|:----------------:|
-|2017, 2018	| BIOL 200 | Introductory Biology II (genetics, cell biology, development) | teaching assistant and laboratory instructor | University of Washington |
-|2016, 2017	| BIOL 180 | Introductory Biology I (evolution, biodiversity, and ecology) | teaching assistant and laboratory instructor | University of Washington |
-|2015, 2017 |	BIOL 355 | Foundations in Molecular Cell Biology | teaching assistant and laboratory instructor | University of Washington |
-|2014	| BIOL 356 | Foundations in Ecology | teaching assistant and laboratory instructor | University of Washington |
+|2017, 2018	| BIOL 200 | Introductory Biology II (genetics, cell biology, development) | teaching assistant & laboratory instructor | University of Washington |
+|2016, 2017	| BIOL 180 | Introductory Biology I (evolution, biodiversity, and ecology) | teaching assistant & laboratory instructor | University of Washington |
+|2015, 2017 |	BIOL 355 | Foundations in Molecular Cell Biology | teaching assistant & laboratory instructor | University of Washington |
+|2014	| BIOL 356 | Foundations in Ecology | teaching assistant & laboratory instructor | University of Washington |
 |2013	| BIOL 533 | Ocean Acidification | co-instructor | Friday Harbor Laboratories, University of Washington |
 |2013	| BIOL 300 | Introduction to Neuroscience | teaching assistant | University of Washington |
-|2012	| BIOL 427 | Biomechanics | teaching assistant and laboratory instructor | University of Washington |
+|2012	| BIOL 427 | Biomechanics | teaching assistant & laboratory instructor | University of Washington |
 |2012 |	BIOL 533 | Comparative Biomechanics | co-instructor | Friday Harbor Laboratories, University of Washington |
 
 
