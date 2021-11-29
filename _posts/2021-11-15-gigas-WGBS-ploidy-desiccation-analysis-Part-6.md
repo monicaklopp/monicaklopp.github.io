@@ -21,41 +21,28 @@ After comparing analyses and looking at genome feature locations, we decided to 
 ### GOterm annotation
 GOterm annotation was carried out using this [jupyter-notebook]()
 
-The order of operations included: </br>
-1. Creating a master annotation table using DIAMOND blastx
-2. Joining with GO terms
-3. Joining with GO slim terms
-4. Matching CpG background and DML lists with GOterms
+The key outputs I got from this notebook are:
+1. A master annotation table (cgigas_uk_roslin_v1_rna_from_genomic_annot.transcript.tab).
+2. A summary (union, 1x coverage) of the CpG background generated form the .bed files, joined with transcript IDs and GO annotations (union_1x.GeneIDs.geneOverlap.transcriptIDs.GOAnnot).
+3. A gene ID to GO term map that compares the unique transcript IDs within the background and the blast annotation (geneid2go.tab)
+4. A summary object of the DML associated with the test factor, joined with transcript IDs and GO annotations (e.g., DML-Cov10-20.GeneIDs.geneOverlap.transcriptIDs.GOAnnot)  
 
-Matching the DML looked a little something like this:
+I created a unique notebook for each dataset. Ronit's data had a lot of GO terms, and required at least 48 GB of ram to complete the analysis.
 
-```
-!intersectBed \
--wb \
--a DML/DML-getMethylDiff-ploidy-Cov10-20.bed \
--b GFF/cgigas_uk_roslin_v1_gene.gff \
-> DML/DML-ploidy-Cov10-20-Gene-wb.bed
-```
+### Results
 
-Output:
-DML-Cov10-20-BOTH-COMBO.GeneIDs.geneOverlap.transcriptIDs.GOAnnot
-BOTH datasets = RONIT + YAAMINI Controls
-
-BOTH datasets - Overlapping DML - 833 unique GOIDs, 517 associated with BP
-BOTH datasets - PLOIDY DML - 3264 unique GOIDs, 29 unique genes
-
-
-##########################################################################
-```
 Here is the prior table for reference:
-
 Table 1. DML counts from each analysis
 ![](/post_images/100421/DML_count_table.png)
 
-Here are the plots:
+Figure 1. GO terms (counts + percentages). BP = biological processes, CC = cellular components, MF = molecular functions.
+![](/post_images/20211115/GOterms_table.jpg)
 
-Figure 1. Each dataset separately
-![](/post_images/100621/genome_location_INDIVIDUAL.png)
+Figure 2. Unique transcripts, genes, and gene products (counts). BP = biological processes, CC = cellular components, MF = molecular functions.
+![](/post_images/20211115/Genes_table.jpg)
 
-Figure 2. Both datasets together
-![](/post_images/100621/genome_location_BOTH.png)
+Figure 3. Unique DML in Genes w/ Enriched GO terms (counts).
+![](/post_images/20211115/Unique_DML_in_Genes_table.jpg)
+
+Figure 4. Unique DML in Genes w/ Enriched GO terms (percentages).
+![](/post_images/20211115/Unique_DML_in_Genes_percentages_table.png)
