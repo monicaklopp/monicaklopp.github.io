@@ -19,4 +19,4 @@ The F-filters are for fluorometry, the D-filters are for time-resolved fluoromet
 
 ### Links to progress by Olivia
 
-First round [results](https://docs.google.com/spreadsheets/d/1YQkBKo3tZJE3Al3JJTQcHRjNd3YLmL1-r8QQaX4vKNY/edit#gid=0)- ~20 mg gill/mantle a with a tissue to buffer ratio of 0.1 
+First round [results](https://docs.google.com/spreadsheets/d/1YQkBKo3tZJE3Al3JJTQcHRjNd3YLmL1-r8QQaX4vKNY/edit#gid=0)- ~20 mg gill/mantle with a tissue to buffer ratio of 0.1 
