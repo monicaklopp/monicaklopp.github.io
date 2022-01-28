@@ -15,6 +15,8 @@ variable: ploidy, desiccation, high temperature <br />
 
 [previous notebook entry](https://mattgeorgephd.github.io/gigas-WGBS-ploidy-desiccation-analysis-Part-4/)
 
+[next notebook entry](https://mattgeorgephd.github.io/gigas-WGBS-ploidy-desiccation-analysis-Part-6/)
+
 ### Background
 After running methylkit to find the DML within each dataset, we now need to see where they are located. To do this I will be running this [jupyter notebook]() and using the genome feature tracks available [here](https://robertslab.github.io/resources/Genomic-Resources/#crassostrea-gigas-cgigas_uk_roslin_v1)
 

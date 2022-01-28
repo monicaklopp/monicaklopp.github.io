@@ -13,6 +13,11 @@ Funding source: [unknown]() <br />
 Species: *Crassostrea gigas* <br />
 variable: ploidy, desiccation, high temperature <br />
 
+[previous notebook entry](https://mattgeorgephd.github.io/gigas-WGBS-ploidy-desiccation-analysis-Part-3/)
+
+[next notebook entry](https://mattgeorgephd.github.io/gigas-WGBS-ploidy-desiccation-analysis-Part-5/)
+
+
 ### Background
 After looking through the MethylKit output generated from Ronit's samples, we are having trouble making sense of our results without the inclusion of diploid and triploid controls. To address this issue, Steven suggested that we include some of the other WGBS data we have for pacific oysters, namely from Yaamini's Hawaii data, Roberto's samples, and the Manchester gonad samples, as outlined within this [notebook post](https://sr320.github.io/Gigome/).
 

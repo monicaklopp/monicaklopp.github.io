@@ -13,6 +13,10 @@ Funding source: [unknown]() <br />
 Species: *Crassostrea gigas* <br />
 variable: ploidy, desiccation, high temperature <br />
 
+
+[next notebook entry](https://mattgeorgephd.github.io/gigas-WGBS-ploidy-desiccation-analysis-Part-2)
+
+
 ### Background:
 We have bisulfide sequencing data from Ronit's desiccation exposure
 experiments using juvenile pacific oysters. Here is the forked [github repo](https://github.com/mattgeorgephd/gigas-WGBS-ploidy-desiccation).

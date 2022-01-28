@@ -13,6 +13,10 @@ Funding source: [unknown]() <br />
 Species: *Crassostrea gigas* <br />
 variable: ploidy, desiccation, high temperature <br />
 
+[previous notebook entry](https://mattgeorgephd.github.io/gigas-WGBS-ploidy-desiccation-analysis-Part-1/)
+
+[next notebook entry](https://mattgeorgephd.github.io/gigas-WGBS-ploidy-desiccation-analysis-Part-3/)
+
 ### Background:
 This is continuation of the WGBS analysis I've been running on Ronit's data. The previous post can be found [here](https://mattgeorgephd.github.io/cgigas-ploidy-desiccation-WGBS-analysis-Part-1/). I'll be following Yaamini's [walkthrough](https://yaaminiv.github.io/Hawaii-Gigas-Methylation-Analysis-Part5/) in this post to look at the results of bismark.
 
