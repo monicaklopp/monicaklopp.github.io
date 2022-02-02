@@ -19,7 +19,7 @@ comments: true
 ### Monthly Goals for February
 1. [ ] Complete gigas-WGBS-ploidy-desiccation [manuscript](https://docs.google.com/document/d/17mcGDI-TWmU4vgBXmiXmeofe4qEuFH5inBKBHhG9tzg/edit).
 2. [ ] Saint Charles [Application](https://stcharlesb.org/).
-3. [ ] Drop off PRS samples to [South Lake Union Lab - E128](https://goo.gl/maps/SjdczeVj4Nbq2LiF8). Call (206) 543-5616. Deadline 2/1.
+3. [x] Drop off PRS samples to [South Lake Union Lab - E128](https://goo.gl/maps/SjdczeVj4Nbq2LiF8). Call (206) 543-5616. Deadline 2/1.
 4. [ ] Run Bioanalyzer on [PSMFC-mytilus-byssus-pilot](https://github.com/mattgeorgephd/PSMFC-mytilus-byssus-pilot) samples.
 5. [ ] Submit order/generate PO for [PSMFC-mytilus-byssus-pilot](https://github.com/mattgeorgephd/PSMFC-mytilus-byssus-pilot) to [UT-Austin](https://wikis.utexas.edu/display/GSAF/Sample+Input+Guidelines).
 6. [ ] Send samples to [UT-Austin](https://wikis.utexas.edu/display/GSAF/Home+Page) for [PSMFC-mytilus-byssus-pilot](https://github.com/mattgeorgephd/PSMFC-mytilus-byssus-pilot).
