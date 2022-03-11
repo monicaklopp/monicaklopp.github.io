@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mon. Nov. 01, 2021
-subtitle: Update & Monthly Goals
+subtitle: November 2021 - Update & Monthly Goals
 gh-repo: mattgeorgephd/mattgeorge.github.io
 gh-badge: [star, fork, follow]
 tags: update monthly goals
