@@ -19,8 +19,9 @@ comments: true
 
 ### Monthly Goals for March
 1. [ ] Complete gigas-WGBS-ploidy-desiccation [manuscript](https://docs.google.com/document/d/17mcGDI-TWmU4vgBXmiXmeofe4qEuFH5inBKBHhG9tzg/edit).
-2. [ ] Complete [title IX training](https://tixemployee.uw.edu/)
+2. [X] Complete [title IX training](https://tixemployee.uw.edu/)
 3. [x] Email collaborators at OSU
 4. [x] Write histology post
-5. [ ] Submit [WRAC pre-proposal](https://docs.google.com/document/d/1MNBthsX97QPuBuzl6ZVTSG8IkTI7papuu8VQPTJCxxE/edit?usp=sharing) by April 15th. Here is the [RFP](http://depts.washington.edu/wracuw/funding/WRAC_Pre-Proposal_FY2023.pdf).
+5. [ ] Submit [WRAC pre-proposal](https://docs.google.com/document/d/1MNBthsX97QPuBuzl6ZVTSG8IkTI7papuu8VQPTJCxxE/edit?usp=sharing). Here is the [RFP](http://depts.washington.edu/wracuw/funding/WRAC_Pre-Proposal_FY2023.pdf).  Due April 15th.
 6. [ ] Apply to SAFS [assistant teaching professor position in Marine Ecology](https://dossier.interfolio.com/deliveries). Due March 25.
+7. [ ] Submit [USDA-NIFA](https://www.grants.gov/web/grants/search-grants.html?keywords=NIFA) proposal. Here is the [RFP](https://www.dropbox.com/s/a09vlieo6nbeug6/FY22-AFRI-SAS-RFA-508.pdf?dl=0). Due July 28, 2022.
