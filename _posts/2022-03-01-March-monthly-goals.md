@@ -24,4 +24,12 @@ comments: true
 4. [x] Write histology post
 5. [ ] Submit [WRAC pre-proposal](https://docs.google.com/document/d/1MNBthsX97QPuBuzl6ZVTSG8IkTI7papuu8VQPTJCxxE/edit?usp=sharing). Here is the [RFP](http://depts.washington.edu/wracuw/funding/WRAC_Pre-Proposal_FY2023.pdf).  Due April 15th.
 6. [ ] Apply to SAFS [assistant teaching professor position in Marine Ecology](https://dossier.interfolio.com/deliveries). Due March 25.
-7. [ ] Submit [USDA-NIFA](https://www.grants.gov/web/grants/search-grants.html?keywords=NIFA) proposal. Here is the [RFP](https://www.dropbox.com/s/a09vlieo6nbeug6/FY22-AFRI-SAS-RFA-508.pdf?dl=0). Due July 28, 2022.
+7. [ ] Submit [USDA-NIFA](https://www.grants.gov/web/grants/search-grants.html?keywords=NIFA) proposal. Here is the [RFP](https://www.dropbox.com/s/a09vlieo6nbeug6/FY22-AFRI-SAS-RFA-508.pdf?dl=0). LOI Due April 27, 2022.
+8. [ ] Apply to [Special Projects Manager II](https://www.governmentjobs.com/careers/kingcounty/jobs/3467207/special-projects-manager-ii-term-limited) position. Due March 27, 2022.
+9.  [ ] Reach out to Penny or Adam
+10. [ ] Reach out to Teri King about WRAC project - guatemal@uw.edu
+11. [x] Email Emily regarding PSMFC project
+
+WDFW - rivers, salmon return forecasting (after april)
+Tod seamens (dfw.wa.gov), lisa crosson (lisa.crosson@dfw.wa.gov)
+Chris eardley policy shellfish puget sound (wdfw) (christopher.eardley@dfw.wa.gov)
