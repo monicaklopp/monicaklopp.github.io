@@ -15,7 +15,7 @@ author: Monica Klopp
 
 navbar-links:
 #  CV: ""
-  About: "aboutme"
+  # About: "aboutme"
   Lab Notebook: "notebook"
 #  Publications: "publications"
 #  Outreach: "outreach"
