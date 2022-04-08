@@ -6,26 +6,27 @@
 # --- Required options --- #
 
 # Name of website
-title: Matthew N. George, Ph.D.
+title: Monica Klopp
 
 # Your name to show in the footer
-author: Matthew N. George, Ph.D.
+author: Monica Klopp
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  CV: "https://mattgeorgephd.github.io/CV/Matthew_N_George_CV_2020.pdf"
-  About: "aboutme"
+#  CV: ""
+#  About: "aboutme"
   Lab Notebook: "notebook"
-  Publications: "publications"
-  Outreach: "outreach"
-  Teaching: "Teaching"
+#  Publications: "publications"
+#  Outreach: "outreach"
+#  Teaching: "Teaching"
 
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/Headshot_MNG_square.jpg"
+
+# avatar: "/assets/img/Headshot_MNG_square.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -40,10 +41,10 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "mngeorge@uw.edu"
-  ORCID: 0000-0003-1264-8667
-  github: mattgeorgephd
-  linkedin: matt-george-65a4b94b
+  email: "mklopp@uw.edu"
+  # ORCID: 0000-0003-1264-8667
+  github: monicaklopp
+#  linkedin: matt-george-65a4b94b
 
 #  reddit: yourname
 #  linkedin: matt-george-65a4b94b
@@ -78,7 +79,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "http://mattgeorgephd.github.io"
+url-pretty: "http://monicaklopp.github.io"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
