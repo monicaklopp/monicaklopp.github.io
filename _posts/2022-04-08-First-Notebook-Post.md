@@ -32,8 +32,14 @@ This is how you go to the next line
 
 first line </br> second line
 
-This is 
+This is
 
 | Header One     | Header Two     | three | four |
 | :------------- | :------------- | :------------- | :------------- |
 | Item One       | Item Two       |  Item Two       | |
+
+## Notes from first display
+
+1. Take out byssal threads
+2. Take picture using Amscope software
+3.
