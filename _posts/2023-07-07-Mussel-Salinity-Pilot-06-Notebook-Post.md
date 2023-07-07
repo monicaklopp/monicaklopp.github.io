@@ -28,12 +28,11 @@ The general steps I took were:
 6. Marked down the gaping number it was reading (below)
 
 ## Gaping base numbers
-Green (Blake Shellton): 147
-Purple (Marshelline): 121
-Blue (Shellina Gomez): 235
-Blue and Red (Shellvester Stallone): 237
-Blue and Orange (Tommy Shellby): 167
- - also needs a seal for the part that screws into the box
+- Green (Blake Shellton): 147
+- Purple (Marshelline): 121
+- Blue (Shellina Gomez): 235
+- Blue and Red (Shellvester Stallone): 237
+- Blue and Orange (Tommy Shellby): 167 (also needs a seal for the part that screws into the box)
 
 Finished sensors are marked with a piece of white tape
 
