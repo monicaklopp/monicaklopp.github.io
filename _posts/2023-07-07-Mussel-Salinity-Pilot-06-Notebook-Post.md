@@ -27,7 +27,7 @@ The general steps I took were:
 5. Glued the magnet on the opposite side (same side as the heart rate monitor)
 6. Marked down the gaping number it was reading (below)
 
-## Gaping base numbers
+### Gaping base numbers
 - Green (Blake Shellton): 147
 - Purple (Marshelline): 121
 - Blue (Shellina Gomez): 235
