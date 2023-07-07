@@ -5,7 +5,7 @@ subtitle:  Graduate Student in the Miller Lab at SDSU
 ---
 
 ### Profiles
-[CV]() | [ORCID]() | [LinkedIn]()
+[CV]() | [LinkedIn]()
 
 
 ### Current Research
