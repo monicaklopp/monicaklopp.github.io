@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Monica Klopp
-subtitle: Undergraduate Research Assistant
+subtitle:  Graduate Student in the Miller Lab at SDSU
 ---
 
 ### Profiles
@@ -15,7 +15,7 @@ subtitle: Undergraduate Research Assistant
 
 
 ### Contact
- **Email:** [mklopp@uw.edu](mailto:mklopp@uw.edu)  
+ **Email:** [mklopp6091@sdsu.edu](mailto:mklopp6091@sdsu.edu)  
 
  **Office:**
 
