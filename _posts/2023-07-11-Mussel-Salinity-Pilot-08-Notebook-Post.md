@@ -8,7 +8,7 @@ tags:
 comments: true
 ---
 
-### Today's Objectives:
+# Today's Objectives:
 - Figuring out what proportion of seawater to fresh will give a salinity of 15 ppt
 - Doing the first run of draining the tank overnight (~12 hours)
 - Starting to Zspar the sensors down (one side today, other side tomorrow)
